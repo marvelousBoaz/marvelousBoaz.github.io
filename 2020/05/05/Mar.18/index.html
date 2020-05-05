@@ -7,15 +7,15 @@
   
   <title>Mar.18 | MarvelousBoaz&#39;s Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Զ�̹����������Ctrl+Alt+T:�����ն���һ��shutdown��1��Ĭ��һ���ӹػ�2��ȡ��: shutdown -c3��shutdown -r ����4����ʱ���� +num; hh:mm, now Զ�̹���ʱ������Ҫ�ػ������� ������ifconfig1��ifconfig2��ifconfig | grep inet (�">
+  <meta name="description" content="远程管理相关命令Ctrl+Alt+T:启动终端（一）shutdown：1、默认一分钟关机2、取消: shutdown -c3、shutdown -r 重启4、定时任务： +num; hh:mm, now 远程管理时尽量不要关机或重启 （二）ifconfig1、ifconfig2、ifconfig | grep inet (三）ping默认一直发送数据包按CTRL+C中止 （四）sshLinux中非">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mar.18">
-<meta property="og:url" content="http://marvelousboaz.github.io/2020/04/28/Mar.18/index.html">
+<meta property="og:url" content="http://marvelousboaz.github.io/2020/05/05/Mar.18/index.html">
 <meta property="og:site_name" content="MarvelousBoaz&#39;s Home">
-<meta property="og:description" content="Զ�̹����������Ctrl+Alt+T:�����ն���һ��shutdown��1��Ĭ��һ���ӹػ�2��ȡ��: shutdown -c3��shutdown -r ����4����ʱ���� +num; hh:mm, now Զ�̹���ʱ������Ҫ�ػ������� ������ifconfig1��ifconfig2��ifconfig | grep inet (�">
+<meta property="og:description" content="远程管理相关命令Ctrl+Alt+T:启动终端（一）shutdown：1、默认一分钟关机2、取消: shutdown -c3、shutdown -r 重启4、定时任务： +num; hh:mm, now 远程管理时尽量不要关机或重启 （二）ifconfig1、ifconfig2、ifconfig | grep inet (三）ping默认一直发送数据包按CTRL+C中止 （四）sshLinux中非">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-04-28T08:11:22.603Z">
-<meta property="article:modified_time" content="2020-04-28T07:57:59.199Z">
+<meta property="article:published_time" content="2020-05-05T14:13:11.894Z">
+<meta property="article:modified_time" content="2020-05-05T14:13:11.898Z">
 <meta property="article:author" content="Boaz Zhang">
 <meta name="twitter:card" content="summary">
   
@@ -68,8 +68,8 @@
       <div class="outer">
         <section id="main"><article id="post-Mar.18" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/04/28/Mar.18/" class="article-date">
-  <time datetime="2020-04-28T08:11:22.603Z" itemprop="datePublished">2020-04-28</time>
+    <a href="/2020/05/05/Mar.18/" class="article-date">
+  <time datetime="2020-05-05T14:13:11.894Z" itemprop="datePublished">2020-05-05</time>
 </a>
     
   </div>
@@ -88,22 +88,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Զ�̹����������<br>Ctrl+Alt+T:�����ն�<br>��һ��shutdown��<br>1��Ĭ��һ���ӹػ�<br>2��ȡ��: shutdown -c<br>3��shutdown -r ����<br>4����ʱ���� +num; hh:mm, now</p>
-<p>Զ�̹���ʱ������Ҫ�ػ�������</p>
-<p>������ifconfig<br>1��ifconfig<br>2��ifconfig | grep inet</p>
-<p>(����ping<br>Ĭ��һֱ�������ݰ�<br>��CTRL+C��ֹ</p>
-<p>���ģ�ssh<br>Linux�зǳ����õ�һ�����ߣ���������SSH�ͻ��˵�¼SSH������<br>Windows�µ�Xshell-�� Linux�ϵ�SSH������</p>
-<p>SSH�˿ڣ�Ĭ��22<br>Windows�µĳ��õ�ssh�ͻ��ˣ�putty��xshell��secureCRT��<br>Windows10�Դ���ssh�����пͻ���<br>������Unixϵͳ���Դ�ssh������</p>
+        <p>远程管理相关命令<br>Ctrl+Alt+T:启动终端<br>（一）shutdown：<br>1、默认一分钟关机<br>2、取消: shutdown -c<br>3、shutdown -r 重启<br>4、定时任务： +num; hh:mm, now</p>
+<p>远程管理时尽量不要关机或重启</p>
+<p>（二）ifconfig<br>1、ifconfig<br>2、ifconfig | grep inet</p>
+<p>(三）ping<br>默认一直发送数据包<br>按CTRL+C中止</p>
+<p>（四）ssh<br>Linux中非常常用的一个工具，可以利用SSH客户端登录SSH服务器<br>Windows下的Xshell-》 Linux上的SSH服务器</p>
+<p>SSH端口：默认22<br>Windows下的常用的ssh客户端：putty、xshell，secureCRT。<br>Windows10自带了ssh命令行客户端<br>所有类Unix系统均自带ssh命令行</p>
 <p>host=192.168.56.1<br>p=22<br>user=<br>pwd=</p>
-<p>��ʽ��ssh -p port user@host</p>
-<p>1����Linux�ϰ�װssh������<br>openssh-server��<br>sudo /etc/init.d/ssh start<br>sudo /etc/init.d/ssh stop</p>
-<p>2��Ҫ���������������磬�ر���NAT<br>��Ҫ���������<br>a���Ž����磨����·������ͨ��DHCP�Ƽ���<br>virtual ��host����ͬһ������<br>��ipconfig �����ǰ�ĵ�ַ<br>hostname = inet��ַ</p>
-<p>b,  NAT��NAT����</p>
+<p>格式：ssh -p port user@host</p>
+<p>1、在Linux上安装ssh服务器<br>openssh-server包<br>sudo /etc/init.d/ssh start<br>sudo /etc/init.d/ssh stop</p>
+<p>2、要深入理解计算机网络，特别是NAT<br>主要两种情况：<br>a，桥接网络（家里路由器开通了DHCP推荐）<br>virtual 、host处于同一个网段<br>用ipconfig 查出当前的地址<br>hostname = inet地址</p>
+<p>b,  NAT或NAT网络</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://marvelousboaz.github.io/2020/04/28/Mar.18/" data-id="ck9tzpygf0005cu7g0bej2atm" class="article-share-link">Share</a>
+      <a data-url="http://marvelousboaz.github.io/2020/05/05/Mar.18/" data-id="ck9u0atoy00054s7g3lgx1xuj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -112,7 +112,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2020/04/28/Mar.25/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/05/05/Mar.25/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -122,7 +122,7 @@
     </a>
   
   
-    <a href="/2020/04/28/Mar.11/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/05/05/Mar.11/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">Mar.11</div>
     </a>
@@ -148,7 +148,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li></ul>
     </div>
   </div>
 
@@ -161,23 +161,23 @@
       <ul>
         
           <li>
-            <a href="/2020/05/05/Apr.1n/">Apr.1n</a>
+            <a href="/2020/05/05/Apr.29/">Apr.29</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/Apr.22/">Apr.22</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/Apr.15/">Apr.15</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/Apr.8/">Apr.8</a>
           </li>
         
           <li>
             <a href="/2020/05/05/Apr.1/">Apr.1</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/28/Mar.25/">Mar.25</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/28/Mar.18/">Mar.18</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/28/Mar.11/">Mar.11</a>
           </li>
         
       </ul>
