@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Mar.25 | MarvelousBoaz&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="sudo apt-get install openssh-serversudo &#x2F;etc&#x2F;init.d&#x2F;ssh startsudo &#x2F;etc&#x2F;init.d&#x2F;ssh stop ssh�ͻ���-Linux,Mac���а汾�Դ�ssh-Windows 7��ʼ�Դ�ssh-���������ߣ�    Xshell    Putty sshԶ�̵�¼��ʽssh [-p port] username">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mar.25">
+<meta property="og:url" content="http://marvelousboaz.github.io/2020/04/28/Mar.25/index.html">
+<meta property="og:site_name" content="MarvelousBoaz&#39;s Home">
+<meta property="og:description" content="sudo apt-get install openssh-serversudo &#x2F;etc&#x2F;init.d&#x2F;ssh startsudo &#x2F;etc&#x2F;init.d&#x2F;ssh stop ssh�ͻ���-Linux,Mac���а汾�Դ�ssh-Windows 7��ʼ�Դ�ssh-���������ߣ�    Xshell    Putty sshԶ�̵�¼��ʽssh [-p port] username">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-04-28T08:11:22.655Z">
+<meta property="article:modified_time" content="2020-04-28T08:01:06.665Z">
+<meta property="article:author" content="Boaz Zhang">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="MarvelousBoaz&#39;s Home" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">MarvelousBoaz&#39;s Home</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://marvelousboaz.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-Mar.25" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/04/28/Mar.25/" class="article-date">
+  <time datetime="2020-04-28T08:11:22.655Z" itemprop="datePublished">2020-04-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Mar.25
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>sudo apt-get install openssh-server<br>sudo /etc/init.d/ssh start<br>sudo /etc/init.d/ssh stop</p>
+<p>ssh�ͻ���<br>-Linux,Mac���а汾�Դ�ssh<br>-Windows 7��ʼ�Դ�ssh<br>-���������ߣ�<br>    Xshell<br>    Putty</p>
+<p>sshԶ�̵�¼��ʽ<br>ssh [-p port] username @ host<br>username:<br>password:<br>host: 192.168.56.1 (NAT=&gt;10.0.2.15)</p>
+<p>һ��SSH�����������¼<br>1��ԭ����<br>a.����һ����Կ�ԣ��ڿͻ����ϴ��˽Կ���ڷ������ϴ�Ź�Կ<br>b. ÿ�ε�¼ʱ��ȡ˽Կ����������ϵĹ�Կ��ԣ���Գɹ���ʾ��֤ͨ��</p>
+<p>2������<br>Q1: ������ɣ�<br>ssh-keygen(key generator): ���ݻ���������ֵ����id_rsa��id_rsa.pub</p>
+<p>Q2�����ɺ����Կ����ںδ���<br>������û�Ŀ¼�µ�.ssh</p>
+<p>Q3���������������<br>����id_rsa.pub�ļ����������ӵ�Զ������.sshĿ¼�µ�authorized_keys�ļ�</p>
+<p>01��Linuxϵͳ��<br>ssh-copy-id [-p port] username@host</p>
+<p>02��Windows<br>a.<br>���ӻ���ʽ����<br>b.<br>scp: secure copy������Զ�̵İ�ȫ����<br>scp [-P port] �����ļ� username@host��Desktop/01.py<br>cat id_rsa.pub &gt;~/.ssh/authorized_keys</p>
+<p>SCP��չ<br>1�������ļ��ϴ���������<br>2��Զ���ļ����ص�����<br>��Զ������Desktop�µ�hello.py���أ�<br> scp -P 22 <a href="mailto:lester@192.168.56.1">lester@192.168.56.1</a>:Desktop/hello.py hello_world.py<br>3���������ļ����ϴ���������<br>scp -r zjnu <a href="mailto:lester@192.168.56.1">lester@192.168.56.1</a>:Desktop<br>4����Զ���ļ�������������<br>scp -r <a href="mailto:lester@192.168.56.1">lester@192.168.56.1</a>:Desktop/01 01_copy</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://marvelousboaz.github.io/2020/04/28/Mar.25/" data-id="ck9tzpygh0006cu7g0if55kir" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/05/05/Apr.1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Apr.1
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/04/28/Mar.18/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Mar.18</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/05/">五月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">四月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2020/05/05/Apr.1n/">Apr.1n</a>
+          </li>
+        
+          <li>
+            <a href="/2020/05/05/Apr.1/">Apr.1</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/28/Mar.25/">Mar.25</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/28/Mar.18/">Mar.18</a>
+          </li>
+        
+          <li>
+            <a href="/2020/04/28/Mar.11/">Mar.11</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2020 Boaz Zhang<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+  </div>
+</body>
+</html>
